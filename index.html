@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include Google API Library -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search Movies..." oninput="searchMovies()">
+      <button onclick="searchMovies()">Search</button>
+    </div>
+  </header>
+
+  <div id="content">
+    <h1>Welcome to Movie Website</h1>
+    <div id="movie-results"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Movie Website. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
